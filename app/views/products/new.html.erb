@@ -25,6 +25,7 @@
 $(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    let values = $(this).serialize
+    let values = $(this).serialize();
+    let producting = $.post('/products', values)
   })
 }
