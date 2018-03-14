@@ -29,12 +29,12 @@ $(function() {
     let producting = $.post('/products', values);
 
     producting.done(function(data) {
-      var product = data;
+      var product = data
       $("#productName").text(product["name"]);
         $("#productDescription").text(product["description"]);
         $("#productInventory").text(product["inventory"]);
         $("#productPrice").text(product["price"]);
     })
   })
-})
+}
 </script>
