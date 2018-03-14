@@ -25,8 +25,8 @@
 $(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    var values = $(this).serialize();
-    var producting = $.post('/products', values);
+    let values = $(this).serialize();
+    let producting = $.post('/products', values);
 
     producting.done(function(data) {
       var product = data;
