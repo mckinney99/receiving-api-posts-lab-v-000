@@ -29,7 +29,7 @@ $(function() {
     let posting = $.post('/products', values);
 
     posting.done(function(data) {
-      var product = data
+      let product = data
       $("#productName").text(product["name"]);
         $("#productDescription").text(product["description"]);
         $("#productInventory").text(product["inventory"]);
